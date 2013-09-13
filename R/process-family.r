@@ -1,3 +1,4 @@
+#' @export
 process_family <- function(package) {
   blocks <- package@blocks
 

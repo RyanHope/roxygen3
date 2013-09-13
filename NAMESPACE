@@ -1,4 +1,7 @@
 export("tag<-")
+export(process_family)
+export(process_include)
+export(process_inherit_params)
 export(Block)
 export(DirectoryBundle)
 export(PackageBundle)

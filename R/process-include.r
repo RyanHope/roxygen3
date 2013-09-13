@@ -1,3 +1,4 @@
+#' @export
 process_include <- function(bundle, path = rPath(bundle)) {
   if (is.null(path)) return(bundle)
 

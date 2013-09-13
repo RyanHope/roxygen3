@@ -1,3 +1,4 @@
+#' @export
 process_inherit_params <- function(package) {
 
   blocks <- package@blocks
