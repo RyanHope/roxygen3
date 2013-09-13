@@ -41,7 +41,8 @@ setMethod("value<-", "TemplateVarTag", function(tag, value) {
 })
 
 template_find <- function(template_name) {
-  path <- file.path("man-roxygen", str_c(template_name, ".r"))
+  path <- list.files("man-roxygen", pattern = str_c("^",template_name, ".r$"), 
+                     ignore.case = T, full.names = T)
   if (!file.exists(path)) {
     message("Can not find template ", template_name)
     return()
