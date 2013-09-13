@@ -16,3 +16,6 @@ setMethod("value<-", "EncodingTag", function(tag, value) {
   tag@text <- words
   tag
 })
+setMethod("writeRd", "EncodingTag", function(object) {
+  RdCommand("encoding", object@text)
+})
